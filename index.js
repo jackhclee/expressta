@@ -38,11 +38,11 @@ app.post("/" + bookRestPath, (req, res) => {
     res.status(200).send({id: req.params.id})
  } )
 
- app.get("/greeting", (req, res, next) => {
-    console.log(`${new Date()} ${req.method} ${req.path}`);
-    log.error("Hello"); 
+ app.get("/greetings", (req, res, next) => {
+    let now = new Date();
+    console.log(`${now} ${req.method} ${req.path}`);
     res.type('application/json')
-    res.json({greeting:"Hello Beautiful World!!!!"});
+    res.json([{greeting:"Hello Beautiful World!!!!" + now.toString()}]);
     }
     )
 
