@@ -2,7 +2,7 @@ FROM node:latest
 
 COPY package.json .
 COPY package-lock.json .
-OPY index.js .
+COPY index.js .
 
 RUN npm ci
 
