@@ -10,7 +10,7 @@ test("1 + 2 = 3", () => {
   }
 )
 
-test("Get all books from server", async () => {
+test.skip("Get all books from server", async () => {
   const response = await axios.get("http://localhost:8080" + "/books");
   let books = response.data;
   console.log(books)
