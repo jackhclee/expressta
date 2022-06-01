@@ -8,3 +8,10 @@ Simple NodeJS Express server. Its default to listen on port 8080
 ```
 $ node index.js
 ```
+
+# Test
+```
+$ npm test
+```
+To test the REST API running at `http://localhost:8080` Remove the `.skip` suffix in tests and run tests.
+
