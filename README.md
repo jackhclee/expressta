@@ -2,7 +2,7 @@
 
 
 # expressta
-Simple NodeJS Express server. Its default to listen on port 8080
+Simple NodeJS Express server. It listens on port `8080` by default.
 
 # Run
 ```
