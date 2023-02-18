@@ -26,7 +26,7 @@ const pool = new Pool(config);
 app.get("/", (req, res) => {
   pool
     .query("SELECT * FROM urls")
-    .then((result) => res.send(result.rows)) // need to use rows to view only table data
+    .then((result) => { console.log("request called"); res.send(result.rows)}) // need to use rows to view only table data
     .catch((error) => {
       console.error(error);
       res.status(500);
