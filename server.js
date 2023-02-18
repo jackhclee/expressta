@@ -11,7 +11,7 @@ app.use(express.json());
 
 env.config()
 
-let port = process.env.PORT || 5001;
+let port = process.env.PORT || 3001;
 //RENDER ---------------
 
 const config = {
