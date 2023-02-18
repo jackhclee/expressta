@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 })
 });
 
-app.get("/healthz", (req, res) => "OK");
+app.get("/healthz", (req, res) => res.sendStatus(200));
 
 module.exports = pool;
 //RENDER ------------
